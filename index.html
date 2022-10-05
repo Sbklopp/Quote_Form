@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="app1.js" defer></script>
+</head>
+<body>
+    
+    <div class="container col-md-6 text-center" style="padding-top: 30px;">
+        <h1>Form</h1>
+    </div>
+    <div class="container-sm col-md-4">
+
+                            <!-- DROP DOWN  -->
+        <div class="container text-center">
+            <h3>Please select a Building Type</h3>
+        </div>
+        <ul id="building-type" class="container text-center">
+            <li>
+                <a id="residential" type="button" class="btn btn-outline-info">Residential</a>
+                <a id="commercial" type="button" class="btn btn-outline-info">Commercial</a>
+                <a id="corporate" type="button" class="btn btn-outline-info">Corporate</a>
+                <a id="hybrid" type="button" class="btn btn-outline-info">Hybrid</a>
+            </li>
+        </ul>
+
+
+                            <!-- FIELDS / INPUTS   -->
+        <div id="number-of-apartments" class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Number of Apartments</label>
+            <input type="number" class="form-control" id="number-of-apartments-input" placeholder="0">
+        </div>
+        <div id="number-of-floors" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number of Floors</label>
+            <input type="number" class="form-control" id="number-of-floors-input" placeholder="0">
+        </div>
+        <div id="number-of-basements" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number of Basements</label>
+            <input type="number" class="form-control" id="number-of-basements-input" placeholder="0">
+        </div>
+        <div id="number-of-companies" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number of Companies</label>
+            <input type="number" class="form-control" id="number-of-companies-input" placeholder="0">
+        </div>
+        <div id="number-of-parking-spots" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Parking Spots</label>
+            <input type="number" class="form-control" id="number-of-parking-spots-input" placeholder="0">
+        </div>
+        <div id="number-of-elevators" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number of Elevators</label>
+            <input type="number" class="form-control" id="number-of-elevators-input" placeholder="0">
+        </div>
+        <div id="number-of-corporations" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Number of Corporations</label>
+            <input type="number" class="form-control" id="number-of-corporations-input" placeholder="0">
+        </div>
+        <div id="maximum-occupancy" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Maximum Occupancy</label>
+            <input type="number" class="form-control" id="maximum-occupancy-input" placeholder="0">
+        </div>
+        <div id="business-hours" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Business Hours</label>
+            <input type="number" class="form-control" id="business-hours-input" placeholder="0">
+        </div>
+
+
+                            <!-- RADIO BUTTONS -->
+        <div id="quality" class="radio-btns container text-center">
+            <input id="standard" type="radio" class="btn-check" name="quality" autocomplete="off">
+            <label class="btn btn-secondary" for="standard">Standard</label>
+    
+            <input id="premium" type="radio" class="btn-check" name="quality" autocomplete="off">
+            <label class="btn btn-secondary" for="premium">Premium</label>
+    
+            <input id="excelium" type="radio" class="btn-check" name="quality" autocomplete="off">
+            <label class="btn btn-secondary" for="excelium">Excelium</label>
+        </div>
+
+    </div>
+    
+                    <!-- READ ONLY FIELDS / OUTPUTS -->
+    <div class="container col-md-4">
+        <div id="elevator-amount" class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Elevator Amount</label>
+            <input type="text" class="form-control" id="elevator-amount-output" placeholder="0" readonly>
+        </div>
+        <div id="elevator-unit-price" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Elevator Price for Each</label>
+            <input type="text" class="form-control" id="elevator-unit-price-output" placeholder="$0.00" readonly>
+        </div>
+        <div id="elevator-total-price" class="mb-3">
+            <label for="formGroupExampleInprmut2" class="form-label">Total Cost</label>
+            <input type="text" class="form-control" id="elevator-total-price-output" placeholder="$0.00" readonly>
+        </div>
+        <div id="installation-fees" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Installation Fees</label>
+            <input type="text" class="form-control" id="installation-fees-output" placeholder="0" readonly>
+        </div>
+        <div if="final-price" class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Final Price!</label>
+            <input type="text" class="form-control" id="final-price-output" placeholder="$0.00" readonly>
+        </div>
+    </div>
+</body>
+</html>
